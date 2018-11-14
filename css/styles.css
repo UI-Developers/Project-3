@@ -1,0 +1,71 @@
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', sans-serif;
+	line-height: 1.6;
+	color: #333333;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p {
+	font-size: .85em;
+}
+
+h1 {
+	font-size: 1.3em;
+}
+
+h2 {
+	font-size: 1.125em;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+header {
+	background-color: #2d3945;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-top: 1.75em;
+	padding-bottom: 1.75em;
+	text-align: center;
+	margin-bottom: 1.3em;
+}
+
+.top {
+	text-align: center;
+}
+
+.lead {
+	margin: .75em auto 0;
+	width: 85%;
+	color: #d3d4d6;
+}
+
+.thick-line {
+	border: 3px solid #57616a;
+	margin-bottom: .25em;
+	margin-top: 2em;
+}
+
+.thin-line {
+	border: 1px solid #abb0b5;
+	margin-bottom: 1.5em;
+}
+
+.wrapper {
+	width: 90%;
+	margin: auto;
+}
