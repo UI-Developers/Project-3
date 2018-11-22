@@ -110,6 +110,12 @@ button {
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
 }
 
+button:hover {
+  background-color: #4ebbb5;
+  border: 1px solid #43a5a0;
+  border-width: 1px 1px 3px;
+}
+
 footer {
 	text-align: center;
 	color: #808080;
@@ -143,18 +149,23 @@ select {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
 	border: 2px solid #385c7e;
 	transition: all .5s ease;
 }
 
-form fieldset input[type=text]::placeholder, form fieldset input[type=email]::placeholder {
+form fieldset input[type=text]::placeholder, form fieldset input[type=email]::placeholder, form fieldset input[type=tel]::placeholder, select[name=user_state] {
   color: #adb2b7;
   font-size: 0.85rem;
   font-style: italic;
   text-align: right;
 }
 
+form fieldset:first-of-type input[name*=user_zipcode] {
+  max-width: 50%;
+  display: block;
+}
 
 @media only screen and (min-width: 768px) {
   .wrapper {
@@ -176,8 +187,9 @@ form fieldset input[type=text]::placeholder, form fieldset input[type=email]::pl
     margin-left: 4%;
     width: 65% !important;
   }
-  form fieldset:first-of-type input[name*=zip] {
+  form fieldset:first-of-type input[name*=user_zip] {
     max-width: 150px;
     text-align: left;
+    display: inline-block;
   }
 }
